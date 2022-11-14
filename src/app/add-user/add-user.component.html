@@ -1,11 +1,11 @@
 <div>
-    <form #addUserForm = "ngForm" (ngSubmit)="confirmUser(addUserForm)">
+    <form #addUserForm="ngForm" (ngSubmit)="confirmUser(addUserForm)">
         <label for="fname">First Name</label>
         <input type="text" name="first_name" id="fname" ngModel>
         <label for="lname">Last Name</label>
-        <input type="text" name="last_name" id="lname" ngModel >
+        <input type="text" name="last_name" id="lname" ngModel>
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" ngModel >
+        <input type="text" name="email" id="email" ngModel>
         <button type="submit">Confirm</button>
         <button (click)="router.navigate(['/users'])">Cancel</button>
     </form>
