@@ -1,0 +1,16 @@
+<div>
+<form #editUserForm = "ngForm" (ngSubmit)="updateUser(editUserForm)" [ngFormOptions]="{ updateOn: 'submit' }" novalidate>
+    <label for="fname">First Name</label>
+    <input type="text" name="first_name" id="fname" [(ngModel)]="user.first_name">
+    <label for="lname">Last Name</label>
+    <input type="text" name="last_name" id="lname" [(ngModel)]="user.last_name"> 
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" [(ngModel)]="user.email">
+    <button type="submit">Confirm</button>
+    <button (click)="router.navigate(['/users'])">Cancel</button>
+    <button id="add" (click)="router.navigate(['add-user'])">Add New User</button>
+</form>
+</div>
+
+
+ 
